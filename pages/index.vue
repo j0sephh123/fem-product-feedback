@@ -1,9 +1,9 @@
 <template>
   <div class="wrapper">
-    <!-- <Sidebar /> -->
+    <Sidebar />
     <main>
-      <!-- <Controls /> -->
-      <List/>
+      <Controls />
+      <List />
       <!-- <NoFeedback/> -->
     </main>
   </div>
@@ -11,7 +11,9 @@
 
 <style scoped lang="scss">
 .wrapper {
+  padding-top: 94px;
   display: flex;
   gap: 30px;
+  justify-content: center;
 }
 </style>

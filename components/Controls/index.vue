@@ -25,6 +25,7 @@
   width: $width-main;
   align-items: center;
   padding: 24px;
+  margin-bottom: 24px;
 
   .sort {
     cursor: pointer;

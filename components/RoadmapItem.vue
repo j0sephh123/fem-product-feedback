@@ -22,6 +22,7 @@ defineProps<{
   @include flex-between();
   padding-left: 24px;
   color: $dark-3;
+  position: relative;
 
   &.planned {
     &::before {
@@ -47,7 +48,7 @@ defineProps<{
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    left: 24px;
+    left: 0;
   }
 
   .label {}
