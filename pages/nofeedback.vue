@@ -1,10 +1,9 @@
 <template>
   <div class="wrapper">
-    <!-- <Sidebar /> -->
+    <Sidebar />
     <main>
-      <!-- <Controls /> -->
-      <List/>
-      <!-- <NoFeedback/> -->
+      <Controls />
+      <NoFeedback/>
     </main>
   </div>
 </template>

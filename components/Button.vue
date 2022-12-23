@@ -1,6 +1,10 @@
-<script setup>
-defineProps({
-  isActive: Boolean
+<script lang="ts" setup>
+export interface Props {
+  isActive?: boolean
+}
+
+const props = withDefaults(defineProps<Props>(), {
+  
 })
 </script>
 

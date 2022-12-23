@@ -10,10 +10,7 @@
       </svg>
     </div>
     <div class="feedback">
-      <div class="button">
-        <span class="plus">+</span>
-        <span>Add Feedback</span>
-      </div>
+      <FeedbackButton />
     </div>
   </div>
 </template>
@@ -25,11 +22,9 @@
   padding: 14px;
   border-radius: $border-radius;
   color: $white;
-  width: 825px;
+  width: $width-main;
   align-items: center;
   padding: 24px;
-
-
 
   .sort {
     cursor: pointer;
@@ -45,25 +40,6 @@
     display: flex;
     justify-content: flex-end;
     flex-grow: 1;
-
-    .button {
-      text-align: right;
-      background-color: $purple;
-      border-radius: $border-radius;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      padding: 12px 24px;
-
-      .plus {
-        padding-right: 4px;
-      }
-
-      span {
-        font-family: 'Jost-Bold';
-        font-size: 14px;
-      }
-    }
   }
 }
 </style>
