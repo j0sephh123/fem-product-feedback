@@ -5,18 +5,9 @@
       <span class="view">View</span>
     </div>
     <div class="bottom">
-      <div>
-        <span class="label">Planned</span>
-        <span class="value">2</span>
-      </div>
-      <div>
-        <span class="label">In-Progress</span>
-        <span class="value">3</span>
-      </div>
-      <div>
-        <span class="label">Live</span>
-        <span class="value">1</span>
-      </div>
+      <RoadmapItem label="Planned" value="2" />
+      <RoadmapItem label="In-Progress" value="3" />
+      <RoadmapItem label="Live" value="1" />
     </div>
   </div>
 </template> 
@@ -24,10 +15,13 @@
 <style scoped lang="scss">
 .wrapper {
   background-color: $white;
-  border-radius: 10px;
+  border-radius: $border-radius;
   width: 255px;
   height: 178px;
   padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   .top {
     @include flex-between();
@@ -47,13 +41,11 @@
   }
 
   .bottom {
-    @include flex-between();
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 
-    .item {
-      .label {}
 
-      .value {}
-    }
   }
 }
 </style>

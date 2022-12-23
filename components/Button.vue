@@ -20,7 +20,7 @@ defineProps({
   font-size: 13px;
   display: inline-block;
   padding: 5px 16px;
-  border-radius: 10px;
+  border-radius: $border-radius;
   cursor: pointer;
 
   &:hover {

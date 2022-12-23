@@ -13,7 +13,7 @@
 .wrapper {
   background-color: $white;
   padding: 24px;
-  border-radius: 10px;
+  border-radius: $border-radius;
   width: 255px;
   display: flex;
   gap: 8px;

@@ -11,7 +11,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   color: $white;
-  border-radius: 10px;
+  border-radius: $border-radius;
   display: inline-block;
   padding: 24px;
   width: 255px;
