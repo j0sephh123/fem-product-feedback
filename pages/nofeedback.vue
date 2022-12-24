@@ -1,16 +1,9 @@
 <template>
-  <div class="wrapper">
+  <ContainersSuggestions class="wrapper">
     <Sidebar />
     <main>
       <Controls />
-      <NoFeedback/>
+      <NoFeedback />
     </main>
-  </div>
+  </ContainersSuggestions>
 </template>
-
-<style scoped lang="scss">
-.wrapper {
-  display: flex;
-  gap: 30px;
-}
-</style>

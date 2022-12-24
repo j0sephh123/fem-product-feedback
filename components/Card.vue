@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="cardWrapper">
     <div class="vote">
       <slot name="vote"></slot>
     </div>
@@ -15,13 +15,12 @@
 </template>
 
 <style lang="scss" scoped>
-.card {
+.cardWrapper {
   background-color: $white;
   border-radius: $border-radius;
   padding: 28px 32px;
   display: flex;
   align-items: center;
-  width: $width-main;
   margin-bottom: 24px;
 }
 

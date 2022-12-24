@@ -9,13 +9,13 @@ const props = withDefaults(defineProps<Props>(), {
 </script>
 
 <template>
-  <div class="button" :class="{ active: isActive }">
+  <div class="buttonWrapper" :class="{ active: isActive }">
     <slot />
   </div>
 </template>
 
 <style lang="scss" scoped>
-.button {
+.buttonWrapper {
   margin-top: 3px;
   margin-bottom: 3px;
   color: $blue-1;

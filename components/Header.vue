@@ -1,12 +1,12 @@
 <template>
-  <header>
+  <header class="header">
     <div class="title">Frontend Mentor</div>
     <div class="subtitle">Feedback Board</div>
   </header>
 </template>
 
 <style scoped lang="scss">
-header {
+.header {
   background-image: url('../assets/images/background-header.png');
   background-repeat: no-repeat;
   background-size: cover;

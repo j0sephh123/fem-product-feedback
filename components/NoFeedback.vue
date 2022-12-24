@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="noFeedbackWrapper">
     <div class="wrapper">
       <img src="~assets/svgs/illustration-empty.svg" />
       <h1>There is no feedback yet.</h1>
@@ -11,7 +11,7 @@
 </template>
 
 <style lang="scss" scoped>
-.container {
+.noFeedbackWrapper {
   width: $width-main;
   background-color: $white;
   height: 600px;
@@ -33,7 +33,7 @@
     width: 410px;
     text-align: center;
 
-    .button {
+    .feedbackButtonWrapper {
       display: inline;
     }
   }

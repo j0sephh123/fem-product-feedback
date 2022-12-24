@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="tagFilterWrapper">
     <Button>All</Button>
     <Button>UI</Button>
     <Button>UX</Button>
@@ -10,7 +10,7 @@
 </template>
 
 <style scoped lang="scss">
-.wrapper {
+.tagFilterWrapper {
   background-color: $white;
   padding: 24px;
   border-radius: $border-radius;

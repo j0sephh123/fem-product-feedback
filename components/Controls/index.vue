@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="controlsWrapper">
     <ControlsSuggestions />
     <div class="sort">
       <span>Sort by</span>
@@ -16,7 +16,7 @@
 </template>
 
 <style scoped lang="scss">
-.wrapper {
+.controlsWrapper {
   display: flex;
   background-color: $dark-1;
   padding: 14px;
@@ -26,6 +26,7 @@
   align-items: center;
   padding: 24px;
   margin-bottom: 24px;
+  gap: 38px;
 
   .sort {
     cursor: pointer;
