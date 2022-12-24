@@ -1,9 +1,8 @@
 <template>
   <div class="comments">
     <div class="comments__title">4 Comments</div>
-    <!-- without replies -->
     <CommentsComment />
-    <!-- with replies -->
+    <CommentsComment :has-replies="true" />
   </div>
 </template>
 
