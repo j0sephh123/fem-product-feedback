@@ -1,5 +1,5 @@
 <template>
-  <div class="controlsWrapper">
+  <div class="controls">
     <ControlsSuggestions />
     <div class="sort">
       <span>Sort by</span>
@@ -16,7 +16,7 @@
 </template>
 
 <style scoped lang="scss">
-.controlsWrapper {
+.controls {
   display: flex;
   background-color: $dark-1;
   padding: 14px;

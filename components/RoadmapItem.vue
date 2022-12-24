@@ -7,7 +7,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="roadmapItemWrapper" :class="{
+  <div class="roadmapItem" :class="{
     planned: label === 'Planned',
     live: label === 'Live',
     inProgress: label === 'In-Progress',
@@ -18,7 +18,7 @@ defineProps<{
 </template>
 
 <style scoped lang="scss">
-.roadmapItemWrapper {
+.roadmapItem {
   @include flex-between();
   padding-left: 24px;
   color: $dark-3;

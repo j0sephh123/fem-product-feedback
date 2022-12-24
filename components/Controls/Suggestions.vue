@@ -1,12 +1,12 @@
 <template>
-  <div class="suggestionsWrapper">
+  <div class="suggestions">
     <img src="~assets/svgs/icon-suggestions.svg" />
     <span>6 Suggestions</span>
   </div>
 </template>
 
 <style scoped lang="scss">
-.suggestionsWrapper {
+.suggestions {
   display: flex;
 
   img {

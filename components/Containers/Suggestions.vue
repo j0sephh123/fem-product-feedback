@@ -1,11 +1,11 @@
 <template>
-  <div class="suggestionsWrapper">
+  <div class="suggestions">
     <slot />
   </div>
 </template>
 
 <style lang="scss" scoped>
-.suggestionsWrapper {
+.suggestions {
   padding-top: 94px;
   display: flex;
   gap: 30px;

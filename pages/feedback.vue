@@ -1,7 +1,7 @@
 <template>
   <div class="feedbackPageWrapper">
     <div class="flex">
-      <GoBack />
+      <GoBac k />
       <Button>Edit Feedback</Button>
     </div>
     <Card>
@@ -15,6 +15,7 @@
         <CommentLabel>1</CommentLabel>
       </template>
     </Card>
+    <Comments />
   </div>
 </template>
 

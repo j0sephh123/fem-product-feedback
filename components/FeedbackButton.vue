@@ -1,12 +1,12 @@
 <template>
-  <div class="feedbackButtonWrapper">
+  <div class="feedbackButton">
     <span class="plus">+</span>
     <span>Add Feedback</span>
   </div>
 </template>
 
 <style lang="scss" scoped>
-.feedbackButtonWrapper {
+.feedbackButton {
   text-align: right;
   background-color: $purple;
   border-radius: $border-radius;

@@ -1,5 +1,5 @@
 <template>
-  <div class="sidebarWrapper">
+  <div class="sidebar">
     <Header />
     <TagFilter />
     <Roadmap />
@@ -7,7 +7,7 @@
 </template>
 
 <style scoped lang="scss">
-.sidebarWrapper {
+.sidebar {
   display: flex;
   flex-direction: column;
   gap: 24px;

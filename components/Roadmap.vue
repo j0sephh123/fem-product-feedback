@@ -1,5 +1,5 @@
 <template>
-  <div class="roadmapWrapper">
+  <div class="roadmap">
     <div class="top">
       <span class="roadmap">Roadmap</span>
       <span class="view">View</span>
@@ -13,7 +13,7 @@
 </template> 
 
 <style scoped lang="scss">
-.roadmapWrapper {
+.roadmap {
   background-color: $white;
   border-radius: $border-radius;
   width: 255px;

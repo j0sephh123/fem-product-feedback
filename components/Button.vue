@@ -4,18 +4,18 @@ export interface Props {
 }
 
 const props = withDefaults(defineProps<Props>(), {
-  
+  isActive: false
 })
 </script>
 
 <template>
-  <div class="buttonWrapper" :class="{ active: isActive }">
+  <div class="button" :class="{ active: isActive }">
     <slot />
   </div>
 </template>
 
 <style lang="scss" scoped>
-.buttonWrapper {
+.button {
   margin-top: 3px;
   margin-bottom: 3px;
   color: $blue-1;

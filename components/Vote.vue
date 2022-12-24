@@ -3,7 +3,7 @@ defineProps<{ isActive: boolean }>()
 </script>
 
 <template>
-  <div class="voteWrapper" :class="{ active: isActive }">
+  <div class="vote" :class="{ active: isActive }">
     <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
       <path d="M1 6l4-4 4 4" :stroke="isActive ? '#fff' : '#4661E6'" stroke-width="2" fill="none" fill-rule="evenodd" />
     </svg>
@@ -14,7 +14,7 @@ defineProps<{ isActive: boolean }>()
 </template>
 
 <style lang="scss" scoped>
-.voteWrapper {
+.vote {
   background-color: $light-1;
   border-radius: $border-radius;
   display: flex;
