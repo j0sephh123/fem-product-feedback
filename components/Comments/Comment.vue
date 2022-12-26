@@ -10,7 +10,7 @@ const { replies, comment } = defineProps<Props>();
 
 <template>
   <div class="comment" :class="{ isRoot: !!replies }">
-    <img class="comment__avatar" :src="`/_nuxt/public/images/image-${comment.avatar}.jpg`" />
+    <img class="comment__avatar" :src="` images/image-${comment.avatar}.jpg`" />
     <div class="comment__main">
       <div class="comment__main--header">
         <div class="comment__main--header_left">
@@ -25,7 +25,7 @@ const { replies, comment } = defineProps<Props>();
   </div>
   <template v-if="!!replies">
     <div v-for="reply in replies" :key="reply.id" class="comment replies">
-      <img class="comment__avatar" :src="`/_nuxt/public/images/image-${reply.avatar}.jpg`" />
+      <img class="comment__avatar" :src="`images/image-${reply.avatar}.jpg`" />
       <div class="comment__main">
         <div class="comment__main--header">
           <div class="comment__main--header_left">

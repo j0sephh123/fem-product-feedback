@@ -16,6 +16,7 @@
       </template>
     </Card>
     <Comments />
+    <AddComment />
   </div>
 </template>
 
