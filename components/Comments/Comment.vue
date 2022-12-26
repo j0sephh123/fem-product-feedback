@@ -1,28 +1,28 @@
 <script setup lang="ts">
 type Props = {
-  hasReplies: boolean
+  hasReplies: boolean;
+  comment: CommentType
 }
 
-const { hasReplies } = withDefaults(defineProps<Props>(), {
+const { hasReplies, comment } = withDefaults(defineProps<Props>(), {
   hasReplies: false
 })
+
 </script>
 
 <template>
   <div class="comment" :class="{ isRoot: hasReplies }">
-    <img class="comment__avatar" src="~assets/images/image-elijah.jpg" />
+    <img class="comment__avatar" :src="`/_nuxt/public/images/image-${comment.avatar}.jpg`" />
     <div class="comment__main">
       <div class="comment__main--header">
         <div class="comment__main--header_left">
-          <div class="comment__main--header_left_name">Elijah Moss</div>
-          <div class="comment__main--header_left_handle">@hexagon.bestagon</div>
+          <div class="comment__main--header_left_name">{{ comment.name }}</div>
+          <div class="comment__main--header_left_handle">{{ comment.handle }}</div>
         </div>
         <div class="comment__main--header_right">Reply</div>
       </div>
 
-      <div class="comment__main--text">Also, please allow styles to be applied based on system preferences. I would love
-        to be able to browse Frontend Mentor in the evening after my device’s dark mode turns on without the bright
-        background it currently has.</div>
+      <div class="comment__main--text">{{ comment.text }}</div>
     </div>
   </div>
   <template v-if="hasReplies">

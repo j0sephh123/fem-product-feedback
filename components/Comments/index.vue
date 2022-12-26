@@ -1,8 +1,20 @@
+<script lang="ts" setup>
+const comment: CommentType = {
+  name: 'Elijah Moss',
+  avatar: 'anne',
+  handle: '@hexagon.bestagon',
+  text: `Also, please allow styles to be applied based on system preferences. I would love
+        to be able to browse Frontend Mentor in the evening after my device’s dark mode turns on without the bright
+        background it currently has.`
+
+}
+</script>
+
 <template>
   <div class="comments">
     <div class="comments__title">4 Comments</div>
-    <CommentsComment />
-    <CommentsComment :has-replies="true" />
+    <CommentsComment :comment="comment" />
+    <!-- <CommentsComment :has-replies="true" /> -->
   </div>
 </template>
 
