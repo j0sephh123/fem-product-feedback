@@ -1,17 +1,15 @@
 <script setup lang="ts">
 type Props = {
-  hasReplies: boolean;
+  replies?: CommentType[];
   comment: CommentType
 }
 
-const { hasReplies, comment } = withDefaults(defineProps<Props>(), {
-  hasReplies: false
-})
+const { replies, comment } = defineProps<Props>();
 
 </script>
 
 <template>
-  <div class="comment" :class="{ isRoot: hasReplies }">
+  <div class="comment" :class="{ isRoot: !!replies }">
     <img class="comment__avatar" :src="`/_nuxt/public/images/image-${comment.avatar}.jpg`" />
     <div class="comment__main">
       <div class="comment__main--header">
@@ -25,22 +23,20 @@ const { hasReplies, comment } = withDefaults(defineProps<Props>(), {
       <div class="comment__main--text">{{ comment.text }}</div>
     </div>
   </div>
-  <template v-if="hasReplies">
-    <div class="comment" :class="{ hasReplies }">
-      <img class="comment__avatar" src="~assets/images/image-anne.jpg" />
+  <template v-if="!!replies">
+    <div v-for="reply in replies" :key="reply.id" class="comment replies">
+      <img class="comment__avatar" :src="`/_nuxt/public/images/image-${reply.avatar}.jpg`" />
       <div class="comment__main">
         <div class="comment__main--header">
           <div class="comment__main--header_left">
-            <div class="comment__main--header_left_name">Anne Valentine</div>
-            <div class="comment__main--header_left_handle">@annev1990</div>
+            <div class="comment__main--header_left_name">{{ reply.name }}</div>
+            <div class="comment__main--header_left_handle">{{ reply.handle }}</div>
           </div>
           <div class="comment__main--header_right">Reply</div>
         </div>
 
         <div class="comment__main--text"><span class="comment__main--text_handle">@hummingbird1</span> While waiting for
-          dark mode, there are browser extensions that
-          will also do the job. Search for "dark theme” followed by your browser. There might be a need to turn off the
-          extension for sites with naturally black backgrounds though.</div>
+          {{ reply.text }}</div>
       </div>
     </div>
   </template>
@@ -66,10 +62,8 @@ const { hasReplies, comment } = withDefaults(defineProps<Props>(), {
     }
   }
 
-  &.hasReplies {
+  &.replies {
     padding-left: 42px;
-
-
   }
 
   &__avatar {
